@@ -1,0 +1,41 @@
+[
+	{
+		"type" : "MySQL",
+		"info" : "Test MySQL",
+		"user" : "User",
+		"pass" : "Pass",
+		"dbname" : "Dbname",
+		"ip" : "ip",
+		"port" : 3306,
+		"path" : "?useConfigs=maxPerformance&characterEncoding=utf8&validationQuery=\"select 1\"&autoReconnect=true&failOverReadOnly=false&maxReconnects=10"
+	},
+	{
+		"type" : "mongo",
+		"info" : "Test MongoDB",
+		"ip" : "ip",
+		"port" : 27017,
+		"dbname" : "dbname"
+	},
+	{
+		"type" : "webservice",
+		"info" : "Webservice Name Tesst tenant",
+		"ip" : "ip",
+		"port" : 1234,
+		"protocol" : "http",
+		"path" : "/",
+		"request" : {
+			"method" : "GET",
+			"property" : [
+				{ "X-Locale": "en" }
+			]
+		}
+	},
+	{
+		"type" : "webservice",
+		"info" : "Test Hybris",
+		"ip" : "IP",
+		"port" : 9002,
+		"protocol" : "https",
+		"path" : "/"
+	}
+]
