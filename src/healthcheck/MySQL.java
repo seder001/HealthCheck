@@ -19,7 +19,12 @@ public class MySQL
 	 */
 	public void prepareMySQL(JsonObject jo)
 	{
-		JsonString dbIP, dbName, dbUser, dbPass, path, info;
+		JsonString dbIP;
+		JsonString dbName;
+		JsonString dbUser;
+		JsonString dbPass;
+		JsonString path;
+		JsonString info;
 		JsonNumber dbPort;
 		String check;
 

@@ -41,7 +41,7 @@ public class HealthCheck
 		return null;
 	}
 
-	private String getFlags(JsonArray jar)
+/*	private String getFlags(JsonArray jar)
 	{
 		if (null == jar)
 		{
@@ -61,7 +61,7 @@ public class HealthCheck
 
 		return flags;
 	}
-
+*/
 	/**
 	 * @param args
 	 */
@@ -80,7 +80,7 @@ public class HealthCheck
 			if (null == jarr)
 			{
 				System.out.println("It looks like, that settings.json is not in a correct JSON format.");
-				System.exit(-1);
+				Runtime.getRuntime().exit(-1);
 			}
 
 			JsonObject jo;

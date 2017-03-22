@@ -19,7 +19,9 @@ public class MongoDB
 	 */
 	public void prepareMongo(JsonObject jo)
 	{
-		JsonString dbIP, dbName, info;
+		JsonString dbIP;
+		JsonString dbName;
+		JsonString info;
 		JsonNumber dbPort;
 		String check;
 
@@ -45,7 +47,7 @@ public class MongoDB
 
 		try
 		{
-			MongoClient mc = new MongoClient(mcURI);
+			new MongoClient(mcURI);
 
 			return " ... OK";
 		}

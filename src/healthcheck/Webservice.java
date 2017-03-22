@@ -45,15 +45,21 @@ public class Webservice
 		return new TrustManager[]
 		{ new X509TrustManager()
 		{
-			public java.security.cert.X509Certificate[] getAcceptedIssuers()
+			public X509Certificate[] getAcceptedIssuers()
 			{
 				return null;
 			}
 
+			/**
+			*
+			**/
 			public void checkClientTrusted(X509Certificate[] certs, String authType)
 			{
 			}
 
+			/**
+			*
+			**/
 			public void checkServerTrusted(X509Certificate[] certs, String authType)
 			{
 			}
@@ -65,7 +71,10 @@ public class Webservice
 	 */
 	public void prepareWebservice(JsonObject jo)
 	{
-		JsonString webIP, info, path, protocol;
+		JsonString webIP;
+		JsonString info;
+		JsonString path;
+		JsonString protocol;
 		JsonNumber webPort;
 		String check;
 
